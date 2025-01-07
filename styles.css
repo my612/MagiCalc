@@ -55,18 +55,25 @@ label[for="output"] {
 .btns-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 5px;
-  max-width: 295px;
+  column-gap: 18px;
+  row-gap: 12px;
+  max-width: 294px;
 }
 .btns-wrapper > * {
-  flex-basis: 70px;
-  height: 70px;
+  flex-basis: 60px;
+  height: 60px;
   background-color: #f5ce9f;
   border-radius: 5px;
   border-style: none;
+  font-size: large;
+  font-weight: bolder;
 }
-.btns {
-  border-radius: 5px;
-  border-style: none;
+.btns-utility {
+  background-color: #ffe3aa;
+}
+.btns-operations {
+  background-color: #eaaa5d;
+}
+#equal{
+  background-image: linear-gradient(180deg, #F1950E 5%, #FED969 75%);
 }
