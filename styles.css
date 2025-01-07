@@ -10,12 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   gap: 20px;
-  background: greenyellow;
+  background: #ffffdd;
   padding: 30px;
   margin: 10%;
   border-style: solid;
   border-radius: 20px;
+  /* max-width: fit-content; */
 }
 .result-wrapper {
   display: flex;
@@ -50,17 +52,21 @@ label[for="output"] {
   box-shadow: black 2px 2px 1;
 }
 
-.operations {
+.btns-wrapper {
   display: flex;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+  max-width: 295px;
+}
+.btns-wrapper > * {
+  flex-basis: 70px;
+  height: 70px;
+  background-color: #f5ce9f;
+  border-radius: 5px;
+  border-style: none;
 }
 .btns {
   border-radius: 5px;
-  border-style: dotted;
-  flex-basis: 50px;
-  height: 70%;
-  font-size: x-large;
+  border-style: none;
 }
