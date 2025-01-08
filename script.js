@@ -42,14 +42,13 @@ for (let i = 0; i < 10; i++) {
   buttonMapping[`N-${i}`] = i;
 }
 
-const handleResult = (resultValue, buttonValue) => {
-  setResult(`${resultValue}${buttonValue}`);
-};
+
+
 const handleButton = (button) => {
   const resultValue = resultField.value;
   const buttonValue = buttonMapping[`${button.id}`];
   if (typeof buttonValue === "function") buttonValue();
-  else handleResult(resultValue, buttonValue);
+  else setResult(`${resultValue} ${buttonValue}`);
 };
 
 buttons.forEach((button) => {
